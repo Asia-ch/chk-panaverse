@@ -9,6 +9,7 @@ import {
   Text,
   Grid,
   GridItem,
+  Highlight,
 } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineGithub, AiOutlineTwitter } from "react-icons/ai";
@@ -58,7 +59,12 @@ function Footer() {
               Marketing
             </Text>
             <Text lineHeight={2} color={"gray"} fontWeight={"bold"}>
-              Community
+              <Highlight 
+               query={'Free'}
+               styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.50', color: 'teal.600', fontWeight:'light' }}
+               >
+              Community Free
+              </Highlight>
             </Text>
           </GridItem>
           <GridItem>
@@ -72,7 +78,12 @@ function Footer() {
               Docs
             </Text>
             <Text lineHeight={2} color={"gray"} fontWeight={"bold"}>
-              Themes
+            <Highlight 
+               query={'New'}
+               styles={{ px: '2', py: '1', rounded: 'full', bg: 'pink.50', color: 'pink.600', fontWeight:'light' }}
+               >
+              Themes New
+              </Highlight>
             </Text>
             <Text lineHeight={2} color={"gray"} fontWeight={"bold"}>
               Pricing
